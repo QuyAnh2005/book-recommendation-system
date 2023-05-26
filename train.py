@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument("--data_dir", type=str, required=True, default="./processed")
     parser.add_argument("--out_dir", type=str, required=True, default="./weight")
     parser.add_argument("--num_features", type=int, required=True, default=10)
-    parser.add_argument("--num_iterators", type=int, required=True, default=200)
+    parser.add_argument("--num_iterators", type=int, required=True, default=150)
     parser.add_argument("--learning_rate", type=float, required=True, default=1e-1)
     parser.add_argument("--lambda_", type=float, required=True, default=2.0)
     parser.add_argument("--seed", type=int, required=True, default=1234)
