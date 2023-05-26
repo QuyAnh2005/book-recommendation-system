@@ -5,6 +5,7 @@ This is a book recommender system that uses collaborative filtering algorithm to
 ## Overview
 
 The book recommender system uses collaborative filtering to analyze user behavior and patterns to recommend books that are likely to be of interest to the user. It leverages user ratings and preferences to find similar users and books, and then suggests books that the target user has not yet rated or interacted with.
+I highly recommend you visit [User-Based Approach notebook](https://github.com/QuyAnh2005/recommender-systems/blob/main/Collaborative%20Filtering/User-Based%20Approach.ipynb) to understand algorithm.
 
 ## Features
 
