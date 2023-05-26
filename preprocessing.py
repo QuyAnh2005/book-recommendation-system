@@ -68,9 +68,11 @@ def main(
     }
 
     book_df = pd.read_csv(book_path, delimiter=';', encoding='ISO-8859-1', on_bad_lines='skip')
+    book_df = book_df[book_df["ISBN"].isin(book_id_map.keys())]
     summary_rating = data.groupby("ISBN").agg(function, axis=0)
     summary_rating = summary_rating.rename(columns={"Book-Rating": "Mean-Rating", "User-ID": "Num-Rating"})
     df = book_df.merge(summary_rating, how="left", left_on="ISBN", right_on="ISBN")
+    df = df.dropna()
     df.drop(columns=["Image-URL-S", "Image-URL-M", "Image-URL-L"], inplace=True)
     df.to_csv(f"{out_dir_path}/summary_book.csv", index=False)
 
