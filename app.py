@@ -33,7 +33,7 @@ def recommend_books(user_id):
     book_df = pd.read_csv(info_path)
     book_df = book_df[book_df["Num-Rating"] > lb]
     book_df['predict'] = book_df["ISBN"].map(predict_dict)
-    df = book_df.nlargest(num, "predict").reset_index(drop=True)
+    df = book_df.nlargest(num, ["predict", "Mean-Rating"]).reset_index(drop=True)
     df["context"] = df.apply(
         lambda book: f"{book['Book-Title']} ({book['Year-Of-Publication']}) - by {book['Book-Author']}", axis=1
     )
