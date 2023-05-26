@@ -35,7 +35,7 @@ utils_c.py
 
 1. Clone the repository:
 ```shell
-git clone https://github.com/your-username/book-recommender-system.git
+git clone https://github.com/QuyAnh2005/book-recommendation-system.git
 ```
 
 2. Install the required dependencies:
