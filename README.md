@@ -52,7 +52,7 @@ or
 ```shell
 python preprocessing.py --rating_path ./dataset/ratings.csv --book_path ./dataset/books.csv --out_dir ./processed --limit 1000
 ```
-More detail at [preproocessing.py](preproocessing.py)
+More detail at [preprocessing.py](preprocessing.py)
 
 2. Training model
 ```shell
