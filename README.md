@@ -70,4 +70,4 @@ Run
 ```shell
 streamlit run app.py
 ```
-or available at [my hugging face](https://huggingface.co/spaces/quyanh/Book-Recommender-System).
+or available at [my huggingface](https://huggingface.co/spaces/quyanh/Book-Recommender-System).
