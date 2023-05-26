@@ -54,11 +54,13 @@ or
 python preprocessing.py --rating_path ./dataset/ratings.csv --book_path ./dataset/books.csv --out_dir ./processed --limit 1000
 ```
 More detail at [preproocessing.py](preproocessing.py)
+
 2. Training model
 ```shell
 python train.py
 ```
 More detail at [train.py](train.py)
+
 3. Recommendation
 ```shell
 python recommend.py
