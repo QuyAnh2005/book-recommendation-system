@@ -13,7 +13,6 @@ I highly recommend you visit [User-Based Approach notebook](https://github.com/Q
 - Collaborative filtering algorithm for accurate recommendations
 - Efficient computation and scalable for small datasets
 - Simple and user-friendly interface
-- Easy integration with existing book-related applications or websites
 
 ## Data
 Dataset is available at [here](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset). After downloading, the `dataset` folder should have the below structure.
